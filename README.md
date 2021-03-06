@@ -7,22 +7,27 @@
 <br>
 
 ## 実行方法
-### 1. 下記のコマンドでbuild．
+### 1. build．
+macOS
 ```
 make build
 ```
+Linux
+```
+cargo build --release
+```
 
 ### 2. シンボリックリンクを作成．
+macOS
 ```
 ln -s /target/release/libtest_lib.dylib test_lib.so
+```
+Linux
+```
+ln -s /target/release/libtest_lib.so test_lib.so
 ```
 
 ### 3. サンプルスクリプトを実行．
 ```
 python3 test.py
-```
-
-### 4. テストの実行．
-```
-cargo test
 ```
