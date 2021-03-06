@@ -32,3 +32,22 @@ pub fn collatz_test(arg: u128) -> u32 {
     n
 }
 
+
+/*
+    GitHub Actions用テストコード
+    macOSでテストする場合はコメントアウトしてください
+*/
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn it_work() {
+        assert_eq!(1, collatz_test(999));
+    }
+
+    #[test]
+    fn it_work_2() {
+        assert_ne!(2, collatz_test(427970));
+    }
+}
