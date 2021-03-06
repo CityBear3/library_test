@@ -1,3 +1,4 @@
+[![Rust](https://github.com/CityBear3/library_test/actions/workflows/rust.yml/badge.svg)](https://github.com/CityBear3/library_test/actions/workflows/rust.yml)
 # library_test
 
 ## ライブラリの説明
